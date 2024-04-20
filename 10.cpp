@@ -43,14 +43,25 @@ void setScore(deque<int>& dequeScore)
 	cout << endl;
 }
 
-//求平均分
+//求平均分,返回一个double类型的结果
 void averScore(deque<int>& dequeScore)
 {
-	sort(dequeScore.begin(), dequeScore.end());
-	dequeScore.pop_back();
-	dequeScore.pop_front();
-	
+	sort(dequeScore.begin(), dequeScore.end());//把分数按从小到大排列
+	dequeScore.pop_back();//去掉最低分
+	dequeScore.pop_front();//去掉最高分
+	double ans;
+	double sum=0;
+	int i = 1;
+	//求和
+	for (deque<int>::iterator it = dequeScore.begin(); it != dequeScore.end(); it++)
+	{
+		sum = sum + *it;
+	}
+	//求均值
+	ans = sum / dequeScore.size();
 
+	cout << "去掉一个最高分和一个最低分，最终得分为" << endl;
+	cout<< ans << endl;
 }
 
 
@@ -58,6 +69,7 @@ void averScore(deque<int>& dequeScore)
 	{
 		deque<int> dequeScore;
 		setScore(dequeScore);
+		averScore(dequeScore);
 	}
 	
 	//
