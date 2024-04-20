@@ -17,7 +17,7 @@ public:
 	
 };
 
-vector<Person> vectorPerson;
+//vector<Person> vectorPerson;
 
 
 
