@@ -22,7 +22,7 @@ void test01()
 	//L1.push_back(26);
 	//L1.push_back(50);
 
-	for (int i  = 10;i<120;i+=rand()%40)
+	for (int i  = 10;i<120;i+=rand())
 	{
 		L1.push_back(i);
 		
