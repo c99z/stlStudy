@@ -5,8 +5,10 @@ using namespace std;
 
 void test01()
 {
-	pair(string, int)p(185, 150);
-
+	/*pairÎŞ·¨Ç¶Ì×*/
+//	pair<int, int>p(180, 140);
+//	pair<string,pair>//
+//
 }
 
 
